@@ -53,7 +53,7 @@ export default function ProjectComponentsGrid() {
     <section className="w-full bg-white py-24 ">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight">
             Browse Project Components & Topics
           </h2>
           {/* <p className="text-deep-green text-[11px] font-bold uppercase tracking-[0.15em]">

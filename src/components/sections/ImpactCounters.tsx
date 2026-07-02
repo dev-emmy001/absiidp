@@ -19,18 +19,18 @@ export default function ImpactCounters() {
   ];
 
   return (
-    <section className="w-full bg-white py-12 border-b border-gray-100" ref={ref}>
+    <section className="w-full bg-white py-12" ref={ref}>
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4 text-center">
           {counterData.map((counter, index) => (
             <div key={index} className="flex-1 min-w-[140px]">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 font-heading tracking-tight">
+              <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-2 font-heading tracking-tight">
                 {inView ? (
-                  <CountUp 
-                    end={counter.value} 
-                    duration={2.5} 
-                    decimals={counter.decimals || 0} 
-                    suffix={counter.suffix} 
+                  <CountUp
+                    end={counter.value}
+                    duration={2.5}
+                    decimals={counter.decimals || 0}
+                    suffix={counter.suffix}
                   />
                 ) : "0"}
               </h3>

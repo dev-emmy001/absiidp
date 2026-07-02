@@ -29,7 +29,7 @@ export default function SnapshotCards() {
     <section className="w-full bg-white py-24">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4 tracking-tight">
             Find and Access Core Project Information
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-base">
@@ -45,7 +45,7 @@ export default function SnapshotCards() {
                 <div className="w-full h-full bg-white/40 border border-white/60 rounded-sm"></div>
               </div>
               <div className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 tracking-tight">{card.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3 tracking-tight">{card.title}</h3>
                 <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">{card.description}</p>
                 <Button href={card.link} variant="primary" size="sm">
                   Learn More
@@ -54,7 +54,7 @@ export default function SnapshotCards() {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
           <Link href="#" className="inline-flex items-center text-sm text-gray-500 font-bold hover:text-deep-green transition-colors uppercase tracking-widest">
             Explore All Documents <ArrowRight size={16} className="ml-2" />

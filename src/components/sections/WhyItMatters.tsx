@@ -25,7 +25,7 @@ export default function WhyItMatters() {
             {/* <span className="bg-gold-accent text-deep-green text-[10px] font-bold uppercase tracking-widest py-1 px-3 w-fit rounded-sm mb-6">
               Why It Matters
             </span> */}
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 font-heading leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-semibold mb-4 font-heading leading-tight tracking-tight">
               Infrastructure as unique as our people.
             </h2>
             <p className="text-white/80 text-base max-w-lg mb-8 leading-relaxed">

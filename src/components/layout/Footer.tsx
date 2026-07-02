@@ -95,7 +95,7 @@ export default function Footer() {
 
         {/* CTA Banner */}
         <div className="bg-gray-50 rounded-sm p-6 md:p-8 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 mb-12">
-          <p className="text-gray-900 font-bold text-lg md:text-xl text-center md:text-left">
+          <p className="text-gray-900 font-semibold text-lg md:text-xl text-center md:text-left">
             Stay updated with the latest project developments!
           </p>
           <Button href="#" variant="primary" size="lg">
