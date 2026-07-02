@@ -15,7 +15,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ABSIIDP | Abia State Integrated Infrastructure Development Project",
+  title: "ABSIIDP - Abia State Integrated Infrastructure Development Project",
   description: "Building resilient infrastructure for a stronger Abia.",
 };
 

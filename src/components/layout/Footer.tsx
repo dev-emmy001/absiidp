@@ -1,17 +1,34 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import { Button } from "../ui/Button";
 
 export default function Footer() {
+  const [greeting, setGreeting] = useState({ text: "  hello", emoji: "👋" });
+
+  useEffect(() => {
+    const hour = new Date().getHours();
+    if (hour < 12) {
+      setGreeting({ text: "Good Morning", emoji: "☀️" });
+    } else if (hour < 17) {
+      setGreeting({ text: "Good Afternoon", emoji: "🌤️" });
+    } else {
+      setGreeting({ text: "Good Evening", emoji: "🌙" });
+    }
+  }, []);
+
   return (
-    <footer className="bg-white text-gray-800 border-t border-gray-200 font-sans">
+    <footer className="bg-white text-gray-800">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 pt-16 pb-8">
 
         {/* Top Section: Greeting & Socials */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
-          {/* <h2 className="font-heading font-bold text-3xl md:text-4xl text-gray-900 tracking-tight">
-            ABSIIDP, <span className="text-deep-green">good evening</span> 🌙
-          </h2> */}
+          <h2 className="font-heading font-semibold text-3xl md:text-4xl text-gray-900 tracking-tight">
+            ABSIIDP, <span className="text-deep-green">{greeting.text}</span> {greeting.emoji}
+          </h2>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-gray-500 hover:text-deep-green transition-colors"><FaInstagram size={20} /></Link>
             <Link href="#" className="text-gray-500 hover:text-deep-green transition-colors"><FaXTwitter size={20} /></Link>
@@ -81,9 +98,9 @@ export default function Footer() {
           <p className="text-gray-900 font-bold text-lg md:text-xl text-center md:text-left">
             Stay updated with the latest project developments!
           </p>
-          <Link href="#" className="inline-flex items-center justify-center gap-2 bg-deep-green text-white font-bold text-sm py-3.5 px-8 rounded-sm hover:bg-green-800 transition-colors whitespace-nowrap shadow-sm">
+          <Button href="#" variant="primary" size="lg">
             View News & Updates <ArrowUpRight size={16} />
-          </Link>
+          </Button>
         </div>
 
         {/* Bottom Bar */}
