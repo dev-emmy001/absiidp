@@ -10,11 +10,11 @@ export default function ResultsDashboardPreview() {
 
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          
+
           {/* Text Content */}
           <div className="w-full lg:w-1/3">
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 tracking-tight leading-tight">
-              Data-Driven <br/><span className="text-gold-accent">Transparency.</span>
+              Data-Driven <br /><span className="text-gold-accent">Transparency.</span>
             </h2>
             <p className="text-gray-400 text-base leading-relaxed mb-8">
               Track ABSIIDP's progress in real-time. Our public Results Dashboard provides comprehensive metrics on infrastructure deployment, budget utilization, and community impact.
@@ -27,7 +27,7 @@ export default function ResultsDashboardPreview() {
           {/* Dashboard Shell Preview */}
           <div className="w-full lg:w-2/3">
             <div className="bg-[#111827] border border-gray-800 rounded-md shadow-2xl p-6 md:p-8 relative">
-              
+
               {/* Dashboard Header */}
               <div className="flex justify-between items-center mb-8 pb-6 border-b border-gray-800">
                 <div className="flex items-center gap-3">
@@ -45,16 +45,16 @@ export default function ResultsDashboardPreview() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 {/* Metric 1 */}
                 <div className="bg-[#1f2937] p-5 rounded-sm border border-gray-700/50">
-                  <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">Budget Utilized</p>
-                  <p className="text-2xl font-bold text-white mb-2">42.5%</p>
+                  <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Budget Utilized</p>
+                  <p className="text-2xl font-semibold text-white mb-2">42.5%</p>
                   <div className="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
                     <div className="bg-deep-green w-[42.5%] h-full"></div>
                   </div>
                 </div>
                 {/* Metric 2 */}
                 <div className="bg-[#1f2937] p-5 rounded-sm border border-gray-700/50">
-                  <p className="text-xs text-gray-400 font-bold uppercase tracking-wider mb-2">Roads Completed</p>
-                  <p className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
+                  <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-2">Roads Completed</p>
+                  <p className="text-2xl font-semibold text-white mb-2 flex items-center gap-2">
                     45 <span className="text-xs font-normal text-gray-400">/ 120 km</span>
                   </p>
                   <div className="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">

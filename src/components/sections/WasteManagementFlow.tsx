@@ -1,6 +1,6 @@
 import React from "react";
 import { Trash2, Truck, Recycle, Leaf, ArrowRight } from "lucide-react";
-import { Button } from "../ui/Button";
+import Link from "next/link";
 
 export default function WasteManagementFlow() {
   const steps = [
@@ -52,8 +52,8 @@ export default function WasteManagementFlow() {
               <div className="w-16 h-16 bg-white border border-gray-200 rounded-full flex items-center justify-center text-deep-green mb-6 shadow-[0_0_0_8px_white]">
                 {step.icon}
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">Step {step.id}</span>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-2">Step {step.id}</span>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
               <p className="text-xs text-gray-500 text-center leading-relaxed">{step.desc}</p>
             </div>
           ))}
@@ -66,17 +66,17 @@ export default function WasteManagementFlow() {
               <div className="absolute -left-[49px] top-0 w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center text-deep-green">
                 {step.icon}
               </div>
-              <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-1">Step {step.id}</span>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+              <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest block mb-1">Step {step.id}</span>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
               <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="text-center">
-          <Button href="#" className="w-full" variant="outline" size="lg">
-            View Environmental Safeguards
-          </Button>
+        <div className="mt-16 text-center">
+          <Link href="#" className="inline-flex items-center text-sm text-gray-500 font-semibold hover:text-deep-green transition-colors uppercase tracking-widest">
+            Stuffs <ArrowRight size={16} className="ml-2" />
+          </Link>
         </div>
       </div>
     </section>

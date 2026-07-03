@@ -13,7 +13,7 @@ export default function ClimateResilienceHighlight() {
           <div className="w-full md:w-1/2">
             {/* <div className="flex items-center gap-2 mb-6">
               <Leaf className="text-deep-green" size={24} />
-              <span className="text-deep-green text-[11px] font-bold uppercase tracking-widest">
+              <span className="text-deep-green text-[11px] font-semibold uppercase tracking-widest">
                 Climate Adaptation
               </span>
             </div> */}

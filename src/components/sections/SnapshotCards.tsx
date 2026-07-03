@@ -56,7 +56,7 @@ export default function SnapshotCards() {
         </div>
 
         <div className="mt-16 text-center">
-          <Link href="#" className="inline-flex items-center text-sm text-gray-500 font-bold hover:text-deep-green transition-colors uppercase tracking-widest">
+          <Link href="#" className="inline-flex items-center text-sm text-gray-500 font-semibold hover:text-deep-green transition-colors uppercase tracking-widest">
             Explore All Documents <ArrowRight size={16} className="ml-2" />
           </Link>
         </div>

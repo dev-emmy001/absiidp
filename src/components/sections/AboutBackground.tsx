@@ -1,5 +1,5 @@
 import React from "react";
-import { Check } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 
 export default function AboutBackground() {
   const objectives = [
@@ -12,7 +12,7 @@ export default function AboutBackground() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Project Background */}
         <div className="mb-20">
@@ -41,7 +41,7 @@ export default function AboutBackground() {
           <ul className="space-y-5">
             {objectives.map((obj, index) => (
               <li key={index} className="flex items-start">
-                <Check className="w-5 h-5 text-green-600 mt-1 shrink-0 mr-4" strokeWidth={3} />
+                <CircleCheck className="w-5 h-5 text-green-600 mt-1 shrink-0 mr-4" strokeWidth={1} />
                 <span className="text-gray-600 text-lg font-light">{obj}</span>
               </li>
             ))}

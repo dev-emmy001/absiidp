@@ -18,7 +18,7 @@ export default function ProjectComponentsGrid() {
               <div className="text-deep-green mb-6 group-hover:scale-110 transition-transform duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">{item.title}</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">{item.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
             </Link>
           ))}

@@ -38,7 +38,7 @@ export default function ProcurementNoticeBoard() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-8 py-4 text-sm font-bold tracking-widest uppercase transition-colors whitespace-nowrap ${activeTab === tab
+              className={`px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-colors whitespace-nowrap ${activeTab === tab
                 ? "border-b-2 border-deep-green text-deep-green"
                 : "text-gray-400 hover:text-gray-600"
                 }`}
@@ -62,10 +62,10 @@ export default function ProcurementNoticeBoard() {
                     <FileText size={20} />
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1 block">
+                    <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mb-1 block">
                       {notice.type}
                     </span>
-                    <h3 className="text-base font-bold text-gray-900 leading-tight pr-4">
+                    <h3 className="text-base font-semibold text-gray-900 leading-tight pr-4">
                       {notice.title}
                     </h3>
                   </div>

@@ -11,16 +11,16 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   className?: string;
 }
 
-export function Button({ 
-  variant = "primary", 
-  size = "md", 
-  className = "", 
+export function Button({
+  variant = "primary",
+  size = "md",
+  className = "",
   href,
-  children, 
-  ...props 
+  children,
+  ...props
 }: ButtonProps) {
-  const baseStyles = "inline-flex items-center justify-center font-bold transition-colors focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-widest whitespace-nowrap gap-2";
-  
+  const baseStyles = "inline-flex items-center justify-center font-semibold transition-colors focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-widest whitespace-nowrap gap-2";
+
   const variants = {
     primary: "bg-deep-green text-white hover:bg-green-800",
     secondary: "bg-gray-900 text-white hover:bg-deep-green",

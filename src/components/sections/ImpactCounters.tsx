@@ -34,7 +34,7 @@ export default function ImpactCounters() {
                   />
                 ) : "0"}
               </h3>
-              <p className="text-[11px] md:text-xs font-bold text-gray-500 uppercase tracking-wider">
+              <p className="text-[11px] md:text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 {counter.label}
               </p>
             </div>

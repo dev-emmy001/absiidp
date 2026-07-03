@@ -142,7 +142,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-[15px] font-bold tracking-wide text-gray-800 hover:text-deep-green transition-colors"
+                    className="text-[15px] font-semibold tracking-wide text-gray-800 hover:text-deep-green transition-colors"
                     onClick={(e) => link.dropdown && e.preventDefault()}
                   >
                     {link.name}
@@ -176,7 +176,7 @@ export default function Header() {
           <div className="flex flex-col space-y-5 pt-2 px-2">
             <div className="flex items-center justify-between">
               <span className="font-semibold text-gray-500 text-xs tracking-wider">LANGUAGE</span>
-              <div className="flex items-center space-x-3 text-sm font-bold">
+              <div className="flex items-center space-x-3 text-sm font-semibold">
                 <button className="text-deep-green">EN</button>
                 <span className="text-gray-300">|</span>
                 <button className="text-gray-400 hover:text-deep-green">IGBO</button>

@@ -22,7 +22,7 @@ export default function WhyItMatters() {
             <div className="absolute -right-20 -top-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
             <div className="absolute -left-10 bottom-0 w-40 h-40 bg-gold-accent/10 rounded-full blur-2xl"></div>
 
-            {/* <span className="bg-gold-accent text-deep-green text-[10px] font-bold uppercase tracking-widest py-1 px-3 w-fit rounded-sm mb-6">
+            {/* <span className="bg-gold-accent text-deep-green text-[10px] font-semibold uppercase tracking-widest py-1 px-3 w-fit rounded-sm mb-6">
               Why It Matters
             </span> */}
             <h2 className="text-3xl md:text-5xl font-semibold mb-4 font-heading leading-tight tracking-tight">

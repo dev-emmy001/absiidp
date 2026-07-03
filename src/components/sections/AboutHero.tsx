@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutHero() {
   return (
     <section className="relative w-full pt-32 pb-24 md:pt-40 md:pb-32 bg-white">
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-3xl md:text-5xl font-semibold font-heading text-gray-900 mb-6 tracking-tighter leading-tight">
           Building a Resilient <br className="hidden md:block" />
           Future for Abia State

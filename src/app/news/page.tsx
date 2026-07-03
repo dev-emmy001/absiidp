@@ -138,7 +138,7 @@ export default function NewsPage() {
               </h3>
 
               <div className="mt-auto flex items-center gap-4">
-                <span className="bg-green-100 text-green-800 text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider rounded-sm">
+                <span className="bg-green-100 text-green-800 text-[10px] font-semibold px-2.5 py-1 uppercase tracking-wider rounded-sm">
                   {news.category}
                 </span>
                 <div className="flex items-center text-xs text-gray-500 font-medium">

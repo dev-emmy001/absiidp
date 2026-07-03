@@ -31,7 +31,7 @@ export default function Timeline() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-sm font-semibold tracking-tight text-green-600 uppercase mb-4">
             Project Timeline
@@ -45,7 +45,7 @@ export default function Timeline() {
           {milestones.map((milestone, index) => (
             <div key={index} className="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12">
               <div className="md:w-32 shrink-0">
-                <span className="text-3xl font-bold font-heading text-gray-300">
+                <span className="text-3xl font-semibold font-heading text-gray-300">
                   {milestone.year}
                 </span>
               </div>
