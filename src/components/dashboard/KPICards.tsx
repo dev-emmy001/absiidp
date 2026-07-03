@@ -43,7 +43,7 @@ export default function KPICards() {
             </div>
           </div>
           <h3 className="text-gray-500 text-sm font-medium mb-1">{kpi.title}</h3>
-          <p className="text-3xl font-bold font-heading text-gray-900 mb-2">{kpi.value}</p>
+          <p className="text-3xl font-semibold font-heading text-gray-900 mb-2">{kpi.value}</p>
           <p className="text-sm font-medium text-gray-400 mt-auto">{kpi.trend}</p>
         </div>
       ))}

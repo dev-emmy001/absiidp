@@ -30,7 +30,7 @@ export default function ReportingDownloads() {
     <div className="bg-white p-6 md:p-8 rounded-xl border border-gray-100">
       <div className="flex justify-between items-end mb-6">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Reports & Data Downloads</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-2">Reports & Data Downloads</h2>
           <p className="text-gray-500">Access official documentation and raw datasets.</p>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function ReportingDownloads() {
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 leading-tight mb-1">{report.title}</h3>
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{report.type} • {report.size}</span>
+                <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">{report.type} • {report.size}</span>
               </div>
             </div>
             <p className="text-sm text-gray-600 mb-6 flex-grow">{report.description}</p>

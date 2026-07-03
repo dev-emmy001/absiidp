@@ -25,8 +25,8 @@ export default function Header() {
       href: "#",
       dropdown: [
         { name: "Road Infrastructure", href: "/project-components/road-infrastructure" },
-        { name: "Climate Resilience", href: "/project-components/climate-resilience" },
-        { name: "Waste Management", href: "/project-components/solid-waste-management" },
+        { name: "Climate Resilience", href: "/climate-resilience" },
+        { name: "Waste Management", href: "/waste-management" },
       ]
     },
     {
@@ -36,7 +36,7 @@ export default function Header() {
         { name: "Procurement", href: "#" },
         { name: "Safeguards & GRM", href: "#" },
         { name: "Results Dashboard", href: "/dashboard" },
-        { name: "Documents", href: "#" },
+        { name: "Documents", href: "/documents" },
       ]
     },
     { name: "NEWS", href: "/news" },
