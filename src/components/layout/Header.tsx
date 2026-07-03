@@ -35,7 +35,7 @@ export default function Header() {
       dropdown: [
         { name: "Procurement", href: "#" },
         { name: "Safeguards & GRM", href: "#" },
-        { name: "Results Dashboard", href: "#" },
+        { name: "Results Dashboard", href: "/dashboard" },
         { name: "Documents", href: "#" },
       ]
     },

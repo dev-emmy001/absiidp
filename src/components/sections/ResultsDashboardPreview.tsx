@@ -19,7 +19,7 @@ export default function ResultsDashboardPreview() {
             <p className="text-gray-400 text-base leading-relaxed mb-8">
               Track ABSIIDP's progress in real-time. Our public Results Dashboard provides comprehensive metrics on infrastructure deployment, budget utilization, and community impact.
             </p>
-            <Button href="#" variant="primary" size="lg">
+            <Button href="/dashboard" variant="primary" size="lg">
               Open Live Dashboard
             </Button>
           </div>
