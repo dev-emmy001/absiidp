@@ -19,14 +19,14 @@ export default function Header() {
 
   const navLinks = [
     { name: "HOME", href: "/" },
-    { name: "ABOUT", href: "#" },
+    { name: "ABOUT", href: "/about" },
     {
       name: "COMPONENTS",
       href: "#",
       dropdown: [
-        { name: "Project Components", href: "#" },
-        { name: "Climate Resilience", href: "#" },
-        { name: "Waste Management", href: "#" },
+        { name: "Road Infrastructure", href: "/project-components/road-infrastructure" },
+        { name: "Climate Resilience", href: "/project-components/climate-resilience" },
+        { name: "Waste Management", href: "/project-components/solid-waste-management" },
       ]
     },
     {
@@ -39,8 +39,8 @@ export default function Header() {
         { name: "Documents", href: "#" },
       ]
     },
-    { name: "NEWS", href: "#" },
-    { name: "CONTACT", href: "#" },
+    { name: "NEWS", href: "/news" },
+    { name: "CONTACT", href: "/contact" },
   ];
 
   return (
