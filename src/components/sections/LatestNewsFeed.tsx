@@ -34,7 +34,7 @@ export default function LatestNewsFeed() {
 
   return (
     <section className="w-full bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
 
         <div className="flex justify-between items-end mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 tracking-tight">

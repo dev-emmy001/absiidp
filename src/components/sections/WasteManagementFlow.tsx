@@ -32,7 +32,7 @@ export default function WasteManagementFlow() {
 
   return (
     <section className="w-full bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4 tracking-tight">
             Integrated Waste Management
@@ -71,12 +71,6 @@ export default function WasteManagementFlow() {
               <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <Link href="#" className="inline-flex items-center text-sm text-gray-500 font-semibold hover:text-deep-green transition-colors uppercase tracking-widest">
-            Stuffs <ArrowRight size={16} className="ml-2" />
-          </Link>
         </div>
       </div>
     </section>

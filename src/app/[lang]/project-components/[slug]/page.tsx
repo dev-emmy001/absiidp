@@ -16,7 +16,7 @@ export default function ProjectComponentPage({ params }: { params: { slug: strin
     <div className="flex flex-col min-h-screen bg-gray-50 pb-20">
       {/* Breadcrumb / Nav */}
       <div className="bg-white border-b border-gray-100 py-4">
-        <div className="max-w-[1200px] mx-auto px-4 flex items-center text-sm text-gray-500">
+        <div className="max-w-[1400px] mx-auto px-4 flex items-center text-sm text-gray-500">
           <Link href="/" className="hover:text-deep-green transition-colors">Home</Link>
           <ChevronRight className="w-4 h-4 mx-2" />
           <Link href="/#components" className="hover:text-deep-green transition-colors">Components</Link>
@@ -36,7 +36,7 @@ export default function ProjectComponentPage({ params }: { params: { slug: strin
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end pb-12">
-          <div className="max-w-[1200px] w-full mx-auto px-4 text-white">
+          <div className="max-w-[1400px] w-full mx-auto px-4 text-white">
             <div className="text-green-500 mb-4 bg-white/10 p-3 rounded-full inline-block backdrop-blur-sm">
               {component.icon}
             </div>
@@ -51,7 +51,7 @@ export default function ProjectComponentPage({ params }: { params: { slug: strin
       </div>
 
       {/* Content */}
-      <div className="max-w-[1200px] mx-auto px-4 pt-16">
+      <div className="max-w-[1400px] mx-auto px-4 pt-16">
         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100 max-w-4xl">
           <h2 className="text-2xl font-semibold font-heading text-gray-900 mb-6">
             Component Overview

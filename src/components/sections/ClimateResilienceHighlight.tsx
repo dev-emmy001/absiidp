@@ -6,7 +6,7 @@ import { Button } from "../ui/Button";
 export default function ClimateResilienceHighlight() {
   return (
     <section className="w-full bg-white py-24">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
 
           {/* Left Content */}

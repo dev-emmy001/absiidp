@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Montserrat, Open_Sans } from "next/font/google";
+import { Google_Sans, Roboto_Slab } from "next/font/google";
 import "../../app/globals.css";
 import Header from "../../components/layout/Header";
 import Footer from "../../components/layout/Footer";
 import { DictionaryProvider } from "../../components/providers/DictionaryProvider";
 import { getDictionary, Locale } from "../../lib/dictionaries";
 
-const montserrat = Montserrat({
+const robotoSlab = Roboto_Slab({
   variable: "--font-heading",
   subsets: ["latin"],
 });
 
-const openSans = Open_Sans({
+const googleSans = Google_Sans({
   variable: "--font-sans-body",
   subsets: ["latin"],
 });
@@ -34,7 +34,7 @@ export default async function RootLayout(
   return (
     <html
       lang={params.lang}
-      className={`${montserrat.variable} h-full antialiased`}
+      className={`${robotoSlab.variable} ${googleSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <DictionaryProvider dictionary={dictionary}>

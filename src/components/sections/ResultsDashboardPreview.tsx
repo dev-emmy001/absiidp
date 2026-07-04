@@ -8,7 +8,7 @@ export default function ResultsDashboardPreview() {
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/2 h-full"></div>
 
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
 
           {/* Text Content */}

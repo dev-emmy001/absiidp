@@ -5,7 +5,7 @@ import { projectComponentsData } from "@/lib/componentsData";
 export default function ProjectComponentsGrid() {
   return (
     <section className="w-full bg-white py-24 " id="components">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight">
             Browse Project Components & Topics

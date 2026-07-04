@@ -31,7 +31,7 @@ export default function Timeline() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-sm font-semibold tracking-tight text-green-600 uppercase mb-4">
             Project Timeline

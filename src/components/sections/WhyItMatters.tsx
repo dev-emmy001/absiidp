@@ -4,7 +4,7 @@ import { Button } from "../ui/Button";
 export default function WhyItMatters() {
   return (
     <section className="w-full bg-white pb-24">
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="flex flex-col md:flex-row rounded-md overflow-hidden bg-white border border-gray-100 min-h-[320px]">
           {/* Left image area (abstract) */}
           <div className="w-full md:w-1/3 bg-[#e8f2ea] flex items-center justify-center p-8 relative overflow-hidden">

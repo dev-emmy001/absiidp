@@ -20,7 +20,7 @@ export default function ImpactCounters() {
 
   return (
     <section className="w-full bg-white py-12" ref={ref}>
-      <div className="max-w-[1200px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-4 text-center">
           {counterData.map((counter, index) => (
             <div key={index} className="flex-1 min-w-[140px]">

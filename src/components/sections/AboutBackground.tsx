@@ -12,7 +12,7 @@ export default function AboutBackground() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Project Background */}
         <div className="mb-20">

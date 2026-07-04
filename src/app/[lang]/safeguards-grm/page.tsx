@@ -60,7 +60,7 @@ export default function SafeguardsGRMPage() {
             </div>
 
             <div className="bg-deep-green text-white p-8 rounded-xl relative overflow-hidden">
-              <AlertCircle size={120} className="absolute -bottom-6 -right-6 text-white opacity-10" />
+              {/* <AlertCircle size={120} className="absolute -bottom-6 -right-6 text-white opacity-10" /> */}
               <h3 className="text-xl font-bold mb-3 relative z-10">Download Framework Documents</h3>
               <p className="text-sm text-white/80 mb-6 relative z-10">Access the full ESMF and RPF documents for detailed guidelines.</p>
               <button className="bg-white text-deep-green font-bold py-2.5 px-6 rounded-md hover:bg-gray-100 transition-colors relative z-10">

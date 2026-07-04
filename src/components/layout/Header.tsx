@@ -66,13 +66,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white w-full">
-      {/* 4-Color Top Border */}
+      {/* 4-Color Top Border
       <div className="flex h-1 w-full">
         <div className="w-1/4 bg-red-600"></div>
         <div className="w-1/4 bg-blue-600"></div>
         <div className="w-1/4 bg-yellow-500"></div>
         <div className="w-1/4 bg-green-600"></div>
-      </div>
+      </div> */}
 
       {/* Top Utility Bar (Desktop) */}
       <div className="hidden xl:block bg-deep-green text-white">
@@ -81,15 +81,15 @@ export default function Header() {
             <div className="flex items-center gap-x-4 uppercase">
               <span>{dictionary.header.partners}</span>
               <span className="px-2 text-white/40">|</span>
-              <button 
-                onClick={() => switchLanguage('en')} 
+              <button
+                onClick={() => switchLanguage('en')}
                 className={`transition-colors ${currentLang === 'en' ? 'text-gold-accent font-bold' : 'hover:text-gold-accent'}`}
               >
                 EN
               </button>
               <span className="text-white/40">/</span>
-              <button 
-                onClick={() => switchLanguage('ig')} 
+              <button
+                onClick={() => switchLanguage('ig')}
                 className={`transition-colors ${currentLang === 'ig' ? 'text-gold-accent font-bold' : 'hover:text-gold-accent'}`}
               >
                 IGBO
@@ -208,14 +208,14 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <span className="font-semibold text-gray-500 text-xs tracking-wider">{dictionary.header.language}</span>
               <div className="flex items-center space-x-3 text-sm font-semibold">
-                <button 
+                <button
                   onClick={() => switchLanguage('en')}
                   className={currentLang === 'en' ? 'text-deep-green font-bold' : 'text-gray-400 hover:text-deep-green'}
                 >
                   EN
                 </button>
                 <span className="text-gray-300">|</span>
-                <button 
+                <button
                   onClick={() => switchLanguage('ig')}
                   className={currentLang === 'ig' ? 'text-deep-green font-bold' : 'text-gray-400 hover:text-deep-green'}
                 >
