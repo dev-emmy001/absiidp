@@ -25,5 +25,49 @@
     "description": "Driving sustainable urban development, climate resilience, and economic growth across Aba and Umuahia.",
     "explore_btn": "Explore Components",
     "dashboard_btn": "View Results Dashboard"
+  },
+  "footer": {
+    "greeting": {
+      "hello": "hello",
+      "morning": "Good Morning",
+      "afternoon": "Good Afternoon",
+      "evening": "Good Evening"
+    },
+    "columns": {
+      "project": "Project",
+      "transparency": "Transparency",
+      "citizen_engagement": "Citizen Engagement",
+      "help_support": "Help & Support",
+      "address": "Address"
+    },
+    "links": {
+      "about": "About ABSIIDP",
+      "components": "Project Components",
+      "climate": "Climate Resilience",
+      "waste": "Waste Management",
+      "procurement": "Procurement",
+      "documents": "Documents",
+      "contract_awards": "Contract Awards",
+      "safeguards_reports": "Safeguards Reports",
+      "submit_grievance": "Submit Grievance",
+      "community_updates": "Community Updates",
+      "faqs": "FAQs",
+      "contact_piu": "Contact PIU"
+    },
+    "address_lines": {
+      "l1": "Abia State PIU",
+      "l2": "Ministry of Works",
+      "l3": "Umuahia, Abia State"
+    },
+    "cta": {
+      "text": "Stay updated with the latest project developments!",
+      "btn": "View News & Updates"
+    },
+    "bottom": {
+      "copyright": "© COPYRIGHT 2026, ALL RIGHTS RESERVED",
+      "gov": "ABIA STATE GOVERNMENT",
+      "powered": "POWERED BY",
+      "piu": "ABIA STATE PIU"
+    }
   }
 }

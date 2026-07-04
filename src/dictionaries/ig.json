@@ -25,5 +25,49 @@
     "description": "Na-akwalite mmepe obodo na-adịgide adịgide, iguzogide ihu igwe, na uto akụ na ụba gafee Aba na Umuahia.",
     "explore_btn": "Nyochaa Akụkụ",
     "dashboard_btn": "Lelee Ugegbe Nsonaazụ"
+  },
+  "footer": {
+    "greeting": {
+      "hello": "ndewo",
+      "morning": "Ụtụtụ Ọma",
+      "afternoon": "Ehihie Ọma",
+      "evening": "Anyasị Ọma"
+    },
+    "columns": {
+      "project": "Ọrụ",
+      "transparency": "Ihe Doziri Edozi",
+      "citizen_engagement": "Mmekọrịta Ụmụ Amaala",
+      "help_support": "Enyemaka & Nkwado",
+      "address": "Adreesị"
+    },
+    "links": {
+      "about": "Gbasara ABSIIDP",
+      "components": "Akụkụ Ọrụ",
+      "climate": "Ijikwa Ọnọdụ Ihu Igwe",
+      "waste": "Nchịkwa Ihe Mkpofu",
+      "procurement": "Ịzụta Ihe",
+      "documents": "Akwụkwọ",
+      "contract_awards": "Onyinye Nkwekọrịta",
+      "safeguards_reports": "Akụkọ Nchekwa",
+      "submit_grievance": "Nye Mkpesa",
+      "community_updates": "Mmelite Obodo",
+      "faqs": "Ajụjụ Ndị A Na-ajụkarị",
+      "contact_piu": "Kpọtụrụ PIU"
+    },
+    "address_lines": {
+      "l1": "Abia State PIU",
+      "l2": "Ngalaba Ọrụ aka",
+      "l3": "Umuahia, Steeti Abia"
+    },
+    "cta": {
+      "text": "Nọgide na-enweta mmelite ọhụrụ gbasara ọrụ a!",
+      "btn": "Lelee Akụkọ & Mmelite"
+    },
+    "bottom": {
+      "copyright": "© COPYRIGHT 2026, IKE NIILE ECHEKWARA",
+      "gov": "GỌỌMENTỊ STEETỊ ABIA",
+      "powered": "NA-AKWADO SITE NA",
+      "piu": "ABIA STATE PIU"
+    }
   }
 }

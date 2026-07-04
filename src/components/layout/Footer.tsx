@@ -5,20 +5,22 @@ import { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { FaFacebook, FaXTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import { Button } from "../ui/Button";
+import { useDictionary } from "../providers/DictionaryProvider";
 
 export default function Footer() {
-  const [greeting, setGreeting] = useState({ text: "  hello", emoji: "👋" });
+  const dictionary = useDictionary();
+  const [greeting, setGreeting] = useState({ text: dictionary.footer.greeting.hello, emoji: "👋" });
 
   useEffect(() => {
     const hour = new Date().getHours();
     if (hour < 12) {
-      setGreeting({ text: "Good Morning", emoji: "☀️" });
+      setGreeting({ text: dictionary.footer.greeting.morning, emoji: "☀️" });
     } else if (hour < 17) {
-      setGreeting({ text: "Good Afternoon", emoji: "🌤️" });
+      setGreeting({ text: dictionary.footer.greeting.afternoon, emoji: "🌤️" });
     } else {
-      setGreeting({ text: "Good Evening", emoji: "🌙" });
+      setGreeting({ text: dictionary.footer.greeting.evening, emoji: "🌙" });
     }
-  }, []);
+  }, [dictionary]);
 
   return (
     <footer className="bg-white text-gray-800">
@@ -42,41 +44,41 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12 mb-16">
           {/* Column 1 */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">Project</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">{dictionary.footer.columns.project}</h3>
             <ul className="space-y-4">
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> About ABSIIDP</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Project Components</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Climate Resilience</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Waste Management</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.about}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.components}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.climate}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.waste}</Link></li>
             </ul>
           </div>
 
           {/* Column 2 */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">Transparency</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">{dictionary.footer.columns.transparency}</h3>
             <ul className="space-y-4">
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Procurement</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Documents</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Contract Awards</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Safeguards Reports</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.procurement}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.documents}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.contract_awards}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.safeguards_reports}</Link></li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">Citizen Engagement</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">{dictionary.footer.columns.citizen_engagement}</h3>
             <ul className="space-y-4">
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Submit Grievance</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Community Updates</Link></li>
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> FAQs</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.submit_grievance}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.community_updates}</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.faqs}</Link></li>
             </ul>
           </div>
 
           {/* Column 4 */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">Help & Support</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">{dictionary.footer.columns.help_support}</h3>
             <ul className="space-y-4">
-              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> Contact PIU</Link></li>
+              <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> {dictionary.footer.links.contact_piu}</Link></li>
               <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> info@absiidp.gov.ng</Link></li>
               <li><Link href="#" className="group flex items-start gap-2 text-[13px] font-medium text-gray-600 hover:text-deep-green transition-colors"><ArrowUpRight size={14} className="text-deep-green mt-0.5 shrink-0 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform" /> +234 (0) 000 000 0000</Link></li>
             </ul>
@@ -84,11 +86,11 @@ export default function Footer() {
 
           {/* Column 5 */}
           <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">Address</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-widest text-gray-900 mb-6">{dictionary.footer.columns.address}</h3>
             <address className="not-italic text-[13px] font-medium text-gray-600 space-y-1">
-              <p>Abia State PIU</p>
-              <p>Ministry of Works</p>
-              <p>Umuahia, Abia State</p>
+              <p>{dictionary.footer.address_lines.l1}</p>
+              <p>{dictionary.footer.address_lines.l2}</p>
+              <p>{dictionary.footer.address_lines.l3}</p>
             </address>
           </div>
         </div>
@@ -96,17 +98,17 @@ export default function Footer() {
         {/* CTA Banner */}
         <div className="bg-gray-50 rounded-sm p-6 md:p-8 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 mb-12">
           <p className="text-gray-900 font-semibold text-lg md:text-xl text-center md:text-left">
-            Stay updated with the latest project developments!
+            {dictionary.footer.cta.text}
           </p>
           <Button href="/news" variant="primary" size="lg">
-            View News & Updates <ArrowUpRight size={16} />
+            {dictionary.footer.cta.btn} <ArrowUpRight size={16} />
           </Button>
         </div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between pt-8 text-[10px] uppercase tracking-wider font-semibold text-gray-400 gap-4 text-center md:text-left">
-          <p>© COPYRIGHT 2026, ALL RIGHTS RESERVED | <span className="text-gray-900">ABIA STATE GOVERNMENT</span></p>
-          <p>POWERED BY - <span className="text-gray-900">ABIA STATE PIU</span></p>
+          <p>{dictionary.footer.bottom.copyright} | <span className="text-gray-900">{dictionary.footer.bottom.gov}</span></p>
+          <p>{dictionary.footer.bottom.powered} - <span className="text-gray-900">{dictionary.footer.bottom.piu}</span></p>
         </div>
 
       </div>
