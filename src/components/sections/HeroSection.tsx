@@ -1,6 +1,6 @@
 import React from "react";
 import { Search, ArrowRight } from "lucide-react";
-
+import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="w-full bg-white pt-24 pb-0 overflow-hidden relative">
@@ -22,21 +22,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Decorative Cityscape / Infrastructure Silhouette */}
-      <div className="w-full h-48 md:h-64 bg-[#f8faf9] flex items-end justify-center relative mt-8 border-t border-gray-100">
-        <div className="absolute bottom-0 w-full h-1/2 bg-deep-green/5"></div>
-        {/* Abstract representation of infrastructure - bridges, buildings, roads */}
-        <div className="flex items-end justify-center w-full max-w-[1200px] gap-2 px-4 opacity-80">
-          <div className="w-16 h-24 bg-gray-200 rounded-t-sm"></div>
-          <div className="w-24 h-40 bg-gray-300 rounded-t-sm"></div>
-          <div className="w-12 h-32 bg-gray-200 rounded-t-sm"></div>
-          <div className="w-full max-w-[400px] h-12 bg-deep-green relative mx-4 rounded-t-sm">
-            {/* Bridge detail */}
-            <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[40px] border-l-transparent border-b-[64px] border-b-gray-300 border-r-[40px] border-r-transparent"></div>
+      <div className="w-full flex justify-center mt-12 mb-8 px-4">
+        <div className="relative w-full max-w-4xl h-64 md:h-[400px] bg-[#f8faf9] rounded-2xl overflow-hidden border border-gray-50 md:p-4">
+          <div className="relative w-full h-full rounded-xl overflow-hidden">
+            <Image src="/Abia_state_tower.jpg" alt="Abia State Tower" fill className="object-cover w-full h-full object-center" priority />
           </div>
-          <div className="w-20 h-28 bg-gray-200 rounded-t-md"></div>
-          <div className="w-32 h-48 bg-gray-300 rounded-t-full"></div>
-          <div className="w-16 h-20 bg-gray-200 rounded-t-sm"></div>
         </div>
       </div>
     </section>

@@ -33,8 +33,8 @@ export default function Header() {
       name: "TRANSPARENCY",
       href: "#",
       dropdown: [
-        { name: "Procurement", href: "#" },
-        { name: "Safeguards & GRM", href: "#" },
+        { name: "Procurement", href: "/procurement" },
+        { name: "Safeguards & GRM", href: "/safeguards-grm" },
         { name: "Results Dashboard", href: "/dashboard" },
         { name: "Documents", href: "/documents" },
       ]

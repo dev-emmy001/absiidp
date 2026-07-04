@@ -34,9 +34,15 @@ export default function ProgressCharts() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
       {/* Component Progress Chart */}
-      <div className="bg-white p-6 rounded-xl  border border-gray-100">
+      <div className="bg-white p-6 rounded-xl border border-gray-100">
         <h3 className="text-lg font-semibold text-gray-900 mb-6">Component Progress (%)</h3>
-        <div className="h-72 w-full">
+        <div className="relative h-72 w-full">
+          {/* Mobile Overlay */}
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white/70 backdrop-blur-sm rounded-lg md:hidden">
+            <p className="text-gray-800 font-semibold text-center px-4">
+              Please view on a larger screen for the best experience.
+            </p>
+          </div>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={componentData} layout="vertical" margin={{ top: 0, right: 30, left: 40, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} />
@@ -52,7 +58,13 @@ export default function ProgressCharts() {
       {/* Budget Expenditure Chart */}
       <div className="bg-white p-6 rounded-xl border border-gray-100">
         <h3 className="text-lg font-semibold text-gray-900 mb-6">Budget Expenditure (Millions USD)</h3>
-        <div className="h-72 w-full">
+        <div className="relative h-72 w-full">
+          {/* Mobile Overlay */}
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white/70 backdrop-blur-sm rounded-lg md:hidden">
+            <p className="text-gray-800 font-semibold text-center px-4">
+              Please view on a larger screen for the best experience.
+            </p>
+          </div>
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={budgetData} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" vertical={false} />
