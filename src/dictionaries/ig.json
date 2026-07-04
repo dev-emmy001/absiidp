@@ -1,0 +1,29 @@
+{
+  "header": {
+    "home": "ỤLỌ",
+    "about": "GBASARA ANYỊ",
+    "components": "AKỤKỤ ỌRỤ",
+    "transparency": "IHE DOZIRI EDOZI",
+    "news": "AKỤKỌ",
+    "contact": "KPỌTỤRỤ ANYỊ",
+    "partners": "NDỊ MMENKỌ: Gọọmenti Steeti Abia | FG nke Nigeria | AfDB | IsDB | CACF",
+    "language": "ASỤSỤ",
+    "search_placeholder": "Chọọ akụkụ ọrụ, akwụkwọ, akụkọ...",
+    "dropdowns": {
+      "road_infrastructure": "Akụrụngwa Ụzọ",
+      "climate_resilience": "Ijikwa Ọnọdụ Ihu Igwe",
+      "waste_management": "Nchịkwa Ihe Mkpofu",
+      "procurement": "Ịzụta Ihe",
+      "safeguards": "Nchekwa & Usoro Mkpesa",
+      "results_dashboard": "Ugegbe Nsonaazụ",
+      "documents": "Akwụkwọ"
+    }
+  },
+  "hero": {
+    "title": "Steeti Abia",
+    "subtitle": "Akụrụngwa Jikọtara Ọnụ",
+    "description": "Na-akwalite mmepe obodo na-adịgide adịgide, iguzogide ihu igwe, na uto akụ na ụba gafee Aba na Umuahia.",
+    "explore_btn": "Nyochaa Akụkụ",
+    "dashboard_btn": "Lelee Ugegbe Nsonaazụ"
+  }
+}

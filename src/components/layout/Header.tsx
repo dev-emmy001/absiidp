@@ -4,10 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { Search, Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { useDictionary } from "../providers/DictionaryProvider";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
+  const dictionary = useDictionary();
+  const pathname = usePathname();
+  const router = useRouter();
 
   const toggleMobileDropdown = (name: string) => {
     if (activeMobileDropdown === name) {
@@ -17,30 +22,46 @@ export default function Header() {
     }
   };
 
+  const switchLanguage = (lang: string) => {
+    document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=31536000`;
+    // Replace the current locale in the pathname if it exists
+    const currentLang = pathname.split('/')[1];
+    if (currentLang === 'en' || currentLang === 'ig') {
+      const newPath = pathname.replace(`/${currentLang}`, `/${lang}`);
+      router.push(newPath);
+    } else {
+      router.push(`/${lang}${pathname}`);
+    }
+    router.refresh();
+  };
+
+  // Determine current active language for styling
+  const currentLang = pathname.split('/')[1] === 'ig' ? 'ig' : 'en';
+
   const navLinks = [
-    { name: "HOME", href: "/" },
-    { name: "ABOUT", href: "/about" },
+    { name: dictionary.header.home, href: "/" },
+    { name: dictionary.header.about, href: "/about" },
     {
-      name: "COMPONENTS",
+      name: dictionary.header.components,
       href: "#",
       dropdown: [
-        { name: "Road Infrastructure", href: "/project-components/road-infrastructure" },
-        { name: "Climate Resilience", href: "/climate-resilience" },
-        { name: "Waste Management", href: "/waste-management" },
+        { name: dictionary.header.dropdowns.road_infrastructure, href: "/project-components/road-infrastructure" },
+        { name: dictionary.header.dropdowns.climate_resilience, href: "/climate-resilience" },
+        { name: dictionary.header.dropdowns.waste_management, href: "/waste-management" },
       ]
     },
     {
-      name: "TRANSPARENCY",
+      name: dictionary.header.transparency,
       href: "#",
       dropdown: [
-        { name: "Procurement", href: "/procurement" },
-        { name: "Safeguards & GRM", href: "/safeguards-grm" },
-        { name: "Results Dashboard", href: "/dashboard" },
-        { name: "Documents", href: "/documents" },
+        { name: dictionary.header.dropdowns.procurement, href: "/procurement" },
+        { name: dictionary.header.dropdowns.safeguards, href: "/safeguards-grm" },
+        { name: dictionary.header.dropdowns.results_dashboard, href: "/dashboard" },
+        { name: dictionary.header.dropdowns.documents, href: "/documents" },
       ]
     },
-    { name: "NEWS", href: "/news" },
-    { name: "CONTACT", href: "/contact" },
+    { name: dictionary.header.news, href: "/news" },
+    { name: dictionary.header.contact, href: "/contact" },
   ];
 
   return (
@@ -58,11 +79,21 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center py-2.5 text-[11px] tracking-[0.1em]">
             <div className="flex items-center gap-x-4 uppercase">
-              <span>PARTNERS: Abia State Govt | FG of Nigeria | AfDB | IsDB | CACF</span>
+              <span>{dictionary.header.partners}</span>
               <span className="px-2 text-white/40">|</span>
-              <button className="hover:text-gold-accent transition-colors">EN</button>
+              <button 
+                onClick={() => switchLanguage('en')} 
+                className={`transition-colors ${currentLang === 'en' ? 'text-gold-accent font-bold' : 'hover:text-gold-accent'}`}
+              >
+                EN
+              </button>
               <span className="text-white/40">/</span>
-              <button className="hover:text-gold-accent transition-colors">IGBO</button>
+              <button 
+                onClick={() => switchLanguage('ig')} 
+                className={`transition-colors ${currentLang === 'ig' ? 'text-gold-accent font-bold' : 'hover:text-gold-accent'}`}
+              >
+                IGBO
+              </button>
             </div>
           </div>
         </div>
@@ -175,11 +206,21 @@ export default function Header() {
 
           <div className="flex flex-col space-y-5 pt-2 px-2">
             <div className="flex items-center justify-between">
-              <span className="font-semibold text-gray-500 text-xs tracking-wider">LANGUAGE</span>
+              <span className="font-semibold text-gray-500 text-xs tracking-wider">{dictionary.header.language}</span>
               <div className="flex items-center space-x-3 text-sm font-semibold">
-                <button className="text-deep-green">EN</button>
+                <button 
+                  onClick={() => switchLanguage('en')}
+                  className={currentLang === 'en' ? 'text-deep-green font-bold' : 'text-gray-400 hover:text-deep-green'}
+                >
+                  EN
+                </button>
                 <span className="text-gray-300">|</span>
-                <button className="text-gray-400 hover:text-deep-green">IGBO</button>
+                <button 
+                  onClick={() => switchLanguage('ig')}
+                  className={currentLang === 'ig' ? 'text-deep-green font-bold' : 'text-gray-400 hover:text-deep-green'}
+                >
+                  IGBO
+                </button>
               </div>
             </div>
             <div className="flex flex-col space-y-3 pb-4">

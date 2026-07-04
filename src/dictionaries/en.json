@@ -1,0 +1,29 @@
+{
+  "header": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "components": "COMPONENTS",
+    "transparency": "TRANSPARENCY",
+    "news": "NEWS",
+    "contact": "CONTACT",
+    "partners": "PARTNERS: Abia State Govt | FG of Nigeria | AfDB | IsDB | CACF",
+    "language": "LANGUAGE",
+    "search_placeholder": "Search project components, documents, news...",
+    "dropdowns": {
+      "road_infrastructure": "Road Infrastructure",
+      "climate_resilience": "Climate Resilience",
+      "waste_management": "Waste Management",
+      "procurement": "Procurement",
+      "safeguards": "Safeguards & GRM",
+      "results_dashboard": "Results Dashboard",
+      "documents": "Documents"
+    }
+  },
+  "hero": {
+    "title": "Abia State",
+    "subtitle": "Integrated Infrastructure",
+    "description": "Driving sustainable urban development, climate resilience, and economic growth across Aba and Umuahia.",
+    "explore_btn": "Explore Components",
+    "dashboard_btn": "View Results Dashboard"
+  }
+}
