@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Menu, X, ChevronDown } from "lucide-react";
+import { Search, Menu, X, ChevronDown, Hamburger } from "lucide-react";
 import { useState } from "react";
 import { useDictionary } from "../providers/DictionaryProvider";
 import { usePathname, useRouter } from "next/navigation";
@@ -152,7 +152,7 @@ export default function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="xl:hidden p-2 -mr-2 text-deep-green hover:bg-gray-50 rounded-md shrink-0 transition-colors"
+            className="xl:hidden p-2 -mr-2 text-gray-900 hover:bg-gray-50 rounded-md shrink-0 transition-colors"
             aria-label="Toggle menu"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >

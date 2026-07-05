@@ -19,7 +19,7 @@ export default function ClimateResilienceHighlight() {
             </div> */}
 
             <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-6 font-heading tracking-tight leading-tight">
-              Building a <span className="text-deep-green">Sustainable</span> Future for Abia.
+              Building a <span className="bg-deep-green text-white">Sustainable</span> Future for Abia.
             </h2>
 
             <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
