@@ -34,7 +34,7 @@ export default async function RootLayout(
   return (
     <html
       lang={params.lang}
-      className={`${robotoSlab.variable} ${googleSans.variable} h-full antialiased`}
+      className={`${robotoSlab.variable} ${googleSans.variable} font-sans h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <DictionaryProvider dictionary={dictionary}>
